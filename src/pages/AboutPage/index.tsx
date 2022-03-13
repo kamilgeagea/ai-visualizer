@@ -17,7 +17,7 @@ const questions: { question: string; answer: string }[] = [
   {
     question: 'Why 2D Data Points?',
     answer: `2D datasets is the easiest way to visualize how the Algorithm works. Once we
-    understand the process, we can use as much features / dimensions as we want, it will behave
+    understand the process, we can use as many features / dimensions as we want, it will behave
     the same way.`
   },
   {

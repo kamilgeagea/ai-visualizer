@@ -41,7 +41,7 @@
     }
 
     &::placeholder {
-      visibility: hidden;
+      color: rgba($color: #fff, $alpha: 0);
     }
   }
 
