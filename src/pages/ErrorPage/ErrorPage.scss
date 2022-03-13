@@ -1,0 +1,37 @@
+@import "../../styles/variables";
+
+.error-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: $sp-xl;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: $sp-xl;
+
+    &__title {
+      color: $color-primary;
+      font-size: $fs-xxl;
+      margin-bottom: $sp-sm;
+    }
+
+    &__subtitle {
+      color: $color-primary;
+      font-size: $fs-lg;
+      margin-bottom: $sp-sm;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    margin: $sp-md;
+    width: 100%;
+
+    &__content {
+      align-items: center;
+      text-align: center;
+    }
+  }
+}

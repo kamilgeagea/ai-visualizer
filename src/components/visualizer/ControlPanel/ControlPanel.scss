@@ -1,0 +1,41 @@
+@import "../../../styles/variables";
+
+.control-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: $color-bg-md;
+  width: 350px;
+
+  div {
+    font-size: $fs-xs;
+  }
+
+  &__menu {
+    height: $dim-md;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $color-light;
+    padding: 0 $sp-md;
+    min-height: $dim-sm;
+
+    &__item {
+      color: $color-medium !important;
+
+      &__selected {
+        color: $color-basic !important;
+      }
+    }
+  }
+
+  &__content {
+    flex: 1;
+    padding: 0 $sp-md;
+    overflow-y: scroll;
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+  }
+}

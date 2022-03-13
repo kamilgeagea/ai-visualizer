@@ -1,0 +1,51 @@
+@import "../../styles/variables";
+
+.alert {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: $sp-sm;
+  border-radius: $border-radius;
+  padding: $sp-xxs $sp-sm;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 100;
+  animation: rise 400ms ease;
+
+  &__error {
+    background-color: $color-danger;
+  }
+
+  &__success {
+    background-color: $color-primary;
+  }
+
+  &__message {
+    display: flex;
+    align-items: center;
+    color: white;
+    flex: 1;
+  }
+
+  &__dismiss-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: $sp-xs;
+    padding-top: 5px;
+  }
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}

@@ -1,0 +1,47 @@
+@import "./styles/variables";
+
+* {
+  font-size: $fs-sm;
+  font-weight: $fw;
+  color: $color-basic;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+
+  &::-webkit-outer-spin-button &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+  &[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
+
+// Firefox
+::-moz-selection {
+  color: white;
+  background: $color-primary;
+}
+
+::selection {
+  color: white;
+  background: $color-primary;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}

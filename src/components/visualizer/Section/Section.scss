@@ -1,0 +1,28 @@
+@import "../../../styles/variables";
+
+.section {
+  padding-top: $sp-md;
+  border-bottom: 1px solid $color-extra-light;
+
+  &__label {
+    color: $color-primary;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    margin: $sp-md 0 $sp-md $sp-sm;
+  }
+
+  &:last-child {
+    border: none;
+  }
+}
+
+.subsection {
+  padding-top: 0px;
+  border: none;
+
+  .section__label {
+    color: $color-basic;
+  }
+}

@@ -1,0 +1,65 @@
+/**
+  File containing all the variables that will be used in styling accross the Application
+**/
+
+// Opacity
+$alpha-extra-light: 0.2;
+$alpha-light: 0.5;
+$alpha-medium: 0.7;
+
+// Colors
+$color-primary: #4681e8;
+$color-secondary: rgba(
+  $color: $color-primary,
+  $alpha: $alpha-medium,
+);
+$color-danger: #f25b50;
+$color-basic: #949494;
+$color-dark: black;
+$color-medium: rgba(
+  $color: $color-basic,
+  $alpha: $alpha-medium,
+);
+$color-light: rgba(
+  $color: $color-basic,
+  $alpha: $alpha-light,
+);
+$color-extra-light: rgba(
+  $color: $color-basic,
+  $alpha: $alpha-extra-light,
+);
+$color-bg: white;
+$color-bg-md: #f0f0f0;
+
+// Font
+$fs-xs: 13px;
+$fs-sm: 16px;
+$fs-md: 20px;
+$fs-lg: 24px;
+$fs-xl: 32px;
+$fs-xxl: 48px;
+
+$fw: 300;
+
+// Spacing
+$sp-xxs: 8px;
+$sp-xs: 12px;
+$sp-sm: 16px;
+$sp-md: 32px;
+$sp-lg: 48px;
+$sp-xl: 64px;
+$sp-xxl: 128px;
+
+// Dimensions
+$dim-sm: 40px;
+$dim-md: 60px;
+
+// Breakpoints
+$desktop: 1024px;
+$tablet: 800px;
+
+// Shadow
+$shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+// Radius
+$border-radius: 5px;

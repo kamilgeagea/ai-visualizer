@@ -1,0 +1,14 @@
+@import "../../../styles/variables";
+
+.row {
+  display: flex;
+
+  &:not(:last-child) {
+    margin-bottom: $sp-md;
+  }
+
+  & > div {
+    flex: 1;
+    display: flex;
+  }
+}

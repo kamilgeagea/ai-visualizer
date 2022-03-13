@@ -1,0 +1,61 @@
+@import "../../styles/variables";
+
+.dropdown {
+  display: flex;
+  position: relative;
+
+  &__content {
+    display: flex;
+    width: $dim-sm;
+
+    &__toggle {
+      display: flex;
+      align-items: center;
+
+      &__value {
+        color: $color-dark;
+        margin-right: 4px;
+        text-transform: lowercase;
+
+        &::first-letter {
+          text-transform: uppercase;
+        }
+      }
+
+      &__icon {
+        display: flex;
+        justify-content: center;
+        transform: rotate(0deg);
+        transition: transform 300ms ease;
+
+        &__opened {
+          transform: rotate(180deg);
+          transition: transform 300ms ease;
+        }
+      }
+    }
+  }
+}
+
+.dropdown-menu {
+  position: absolute;
+  margin-top: 20px;
+  box-shadow: $shadow;
+  background-color: $color-bg-md;
+  z-index: 1;
+
+  &__item {
+    padding: $sp-xxs $sp-sm;
+    text-transform: lowercase;
+    cursor: pointer;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+
+    &:hover {
+      background-color: $color-primary;
+      color: $color-bg;
+    }
+  }
+}

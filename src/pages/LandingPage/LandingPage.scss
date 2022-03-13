@@ -1,0 +1,43 @@
+@import "../../styles/variables";
+@import "../../styles/animations";
+
+.landing {
+  height: 85%;
+  display: flex;
+  align-items: center;
+
+  &__content {
+    @include drop-animation();
+
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: $sp-md $sp-xl;
+
+    &__title {
+      color: $color-primary;
+      font-size: $fs-xxl;
+      margin-bottom: $sp-xxs;
+    }
+
+    &__subtitle {
+      color: $color-secondary;
+      font-size: $fs-lg;
+      margin-bottom: $sp-md;
+    }
+
+    &__description {
+      margin-bottom: $sp-md;
+    }
+
+    @media screen and (max-width: $tablet) {
+      margin: $sp-md;
+      width: 100%;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

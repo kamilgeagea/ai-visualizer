@@ -1,0 +1,10 @@
+@import "../../styles/variables";
+
+.disabled {
+  opacity: $alpha-medium;
+  cursor: not-allowed;
+
+  & > div {
+    pointer-events: none;
+  }
+}

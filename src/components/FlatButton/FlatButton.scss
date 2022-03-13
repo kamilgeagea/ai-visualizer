@@ -1,0 +1,14 @@
+@import "../../styles/variables";
+@import "../../styles//mixins";
+
+.flat-button {
+  @include no-select;
+
+  cursor: pointer;
+  color: $color-primary;
+  text-transform: uppercase;
+
+  &:hover {
+    opacity: $alpha-medium;
+  }
+}

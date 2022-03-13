@@ -1,0 +1,69 @@
+@import "../../../../styles/variables";
+
+.dataset-section {
+  &__labels {
+    &__input-form {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-bottom: $sp-md;
+
+      &__color-picker {
+        position: absolute;
+        right: $sp-sm;
+        margin-top: $sp-sm;
+      }
+
+      & > div {
+        display: flex;
+      }
+
+      & > div:not(:first-child) {
+        flex: 1;
+      }
+    }
+
+    &__content {
+      display: flex;
+      align-items: center;
+
+      &__labels {
+        flex: 1;
+        display: flex;
+
+        &__item {
+          margin-right: $sp-sm;
+        }
+      }
+    }
+  }
+
+  &__random-data-points {
+    &__form {
+      display: flex;
+      margin-bottom: $sp-md;
+
+      & > div {
+        flex: 1;
+      }
+    }
+  }
+}
+
+$color-avatar-dimensions: 10px;
+
+.color-avatar {
+  width: $color-avatar-dimensions;
+  height: $color-avatar-dimensions;
+  border-radius: 90px;
+  animation: appear 300ms;
+
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

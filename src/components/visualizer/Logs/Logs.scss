@@ -1,0 +1,25 @@
+@import "../../../styles/variables";
+
+.logs {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+
+  &__title {
+    color: $color-primary;
+    margin: $sp-md 0 $sp-sm 0;
+    text-transform: uppercase;
+  }
+
+  &__bottom {
+    height: $sp-sm;
+  }
+
+  @media screen and (max-width: $tablet) {
+    transform: rotate(180deg);
+
+    & > div {
+      transform: rotate(-180deg);
+    }
+  }
+}

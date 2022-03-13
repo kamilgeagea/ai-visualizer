@@ -1,0 +1,10 @@
+@import "../../styles/variables";
+
+.label {
+  width: 50px;
+  text-align: end;
+  color: $color-medium;
+  margin-right: $sp-sm;
+  white-space: nowrap;
+  overflow: hidden;
+}

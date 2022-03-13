@@ -1,0 +1,14 @@
+@import "../../styles/variables";
+@import "../../styles/animations";
+
+.models {
+  max-height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+
+  &__content {
+    @include elevate-animation();
+  }
+}

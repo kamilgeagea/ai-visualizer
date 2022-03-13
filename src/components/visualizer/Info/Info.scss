@@ -1,0 +1,47 @@
+@import "../../../styles/variables";
+
+.info {
+  display: flex;
+  flex-direction: column;
+
+  &__image {
+    max-width: 100%;
+    margin-top: $sp-md;
+  }
+
+  &__title {
+    font-size: $fs-sm !important;
+    margin-top: $sp-md;
+    text-transform: uppercase;
+    color: $color-primary;
+  }
+
+  &__description {
+    margin-top: $sp-sm;
+  }
+
+  &__description-link {
+    font-size: inherit;
+    color: $color-primary;
+    margin-top: $sp-xxs;
+  }
+
+  &__videos {
+    margin-top: $sp-md;
+
+    &__links {
+      margin-top: $sp-sm;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &:last-child {
+        margin-bottom: $sp-sm;
+      }
+
+      & > div {
+        margin-top: $sp-sm;
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+@import "../../styles/variables.scss";
+@import "../../styles/animations";
+
+.about-page {
+  width: 100%;
+  padding: 0 $sp-xl $sp-md $sp-xl;
+  overflow-y: scroll;
+
+  &__content {
+    @include right-to-left-animation();
+
+    width: 40%;
+
+    &__spacer {
+      height: $sp-md;
+    }
+
+    &__title {
+      color: $color-primary;
+      font-size: $fs-xxl;
+      margin-bottom: $sp-sm;
+    }
+
+    &__faq {
+      margin-top: $sp-lg;
+
+      &__title {
+        font-size: $fs-lg;
+        color: $color-primary;
+        margin-bottom: $sp-md;
+      }
+
+      &__questions {
+        &__question {
+          color: $color-primary;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .about-page {
+    padding: $sp-sm $sp-md $sp-sm $sp-md;
+
+    &__content {
+      width: 100%;
+    }
+  }
+}

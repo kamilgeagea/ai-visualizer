@@ -1,0 +1,40 @@
+@import "../../styles/variables";
+
+.card-section {
+  &__title {
+    color: $color-primary;
+    text-transform: uppercase;
+    margin: $sp-md 0 0 $sp-xl;
+    font-size: $fs-md;
+  }
+
+  &__cards {
+    display: flex;
+    overflow-x: scroll;
+    padding: $sp-md $sp-md $sp-sm 0;
+
+    &__card {
+      margin-left: $sp-md;
+
+      &__first {
+        margin-left: $sp-xl;
+      }
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    &__title {
+      margin: $sp-md 0 0 $sp-md;
+    }
+
+    &__cards {
+      padding-top: $sp-sm;
+
+      &__card {
+        &__first {
+          margin-left: $sp-md;
+        }
+      }
+    }
+  }
+}

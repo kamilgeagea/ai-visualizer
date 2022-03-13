@@ -1,0 +1,15 @@
+@import "../../../styles/variables";
+
+.low {
+  margin-left: $sp-md;
+}
+
+.medium {
+  color: $color-primary;
+  margin: $sp-xxs 0 $sp-md $sp-md;
+}
+
+.high {
+  margin-bottom: $sp-xs;
+  color: $color-primary;
+}

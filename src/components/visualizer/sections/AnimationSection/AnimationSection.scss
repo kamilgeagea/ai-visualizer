@@ -1,0 +1,26 @@
+@import "../../../../styles/variables.scss";
+
+.animation-section {
+  &__duration {
+    display: flex;
+    margin-bottom: $sp-md;
+
+    &__slider {
+      margin-top: -3px;
+      flex: 1;
+
+      &__value {
+        color: $color-dark;
+      }
+    }
+  }
+
+  &__detailed {
+    display: flex;
+    align-items: center;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: $sp-md;
+  }
+}

@@ -1,0 +1,49 @@
+@import "../../styles/variables";
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 210px;
+  height: 260px;
+  padding: $sp-sm $sp-xs;
+  box-shadow: $shadow;
+  border-radius: $border-radius;
+  border: 1px solid rgba($color-basic, 0.3);
+  justify-content: space-between;
+  top: 0;
+  transition: top ease 0.2s;
+  background-color: $color-bg;
+
+  img {
+    flex: 1;
+    max-width: 100%;
+    max-height: 100%;
+    align-self: center;
+  }
+
+  &__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    &__title {
+      color: $color-primary;
+      text-transform: uppercase;
+    }
+
+    &__description {
+      font-size: $fs-xs;
+      display: -webkit-box;
+      max-width: 200px;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+
+  &:hover {
+    top: -5px;
+  }
+}

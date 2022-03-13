@@ -1,0 +1,10 @@
+@import "../../styles/variables";
+
+.switch-field {
+  display: flex;
+
+  &__switch {
+    display: table-cell;
+    all: unset;
+  }
+}

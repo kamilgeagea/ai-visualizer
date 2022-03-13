@@ -1,0 +1,16 @@
+@import "../../styles/variables";
+
+.input-field {
+  display: flex;
+
+  &__input {
+    display: table-cell;
+    all: unset;
+    color: $color-dark;
+    width: $dim-sm;
+
+    &::placeholder {
+      color: inherit;
+    }
+  }
+}

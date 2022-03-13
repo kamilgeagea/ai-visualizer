@@ -1,0 +1,80 @@
+@import "../../styles/variables";
+@import "../../styles/animations";
+
+.contact {
+  padding: $sp-lg $sp-xl;
+  width: 33%;
+
+  &__contact-form {
+    @include left-to-right-animation();
+
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: $sp-xl;
+
+    &__title {
+      color: $color-primary;
+      font-size: $fs-xxl;
+    }
+
+    &__textfield {
+      margin-top: $sp-sm;
+    }
+
+    &__buttons {
+      display: flex;
+      margin-top: $sp-md;
+      margin-bottom: $sp-sm;
+
+      &__socials {
+        flex: 1;
+        display: flex;
+        align-items: center;
+
+        &__layout {
+          width: 40%;
+          min-width: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          &__social {
+            &__image {
+              width: 22px;
+              height: 22px;
+
+              &__gmail {
+                height: 19px;
+              }
+            }
+
+            &:hover {
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+    padding: $sp-md;
+
+    &__contact-form {
+      &__buttons {
+        flex-direction: column-reverse;
+
+        &__socials {
+          margin-top: $sp-md;
+
+          &__layout {
+            width: 100%;
+            justify-content: space-evenly;
+          }
+        }
+      }
+    }
+  }
+}

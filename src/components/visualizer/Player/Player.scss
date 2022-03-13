@@ -1,0 +1,38 @@
+@import "../../../styles/variables";
+
+.player {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: $sp-xxs;
+  width: 100%;
+
+  &__title {
+    color: $color-primary;
+    text-transform: uppercase;
+    font-size: $fs-md;
+  }
+
+  &__buttons {
+    display: flex;
+    margin-left: $sp-xl;
+
+    & > div {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      margin-right: $sp-xs;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    justify-content: space-between;
+
+    &__title {
+      margin-left: $sp-sm;
+    }
+
+    &__buttons {
+      margin: 0 $sp-sm;
+    }
+  }
+}

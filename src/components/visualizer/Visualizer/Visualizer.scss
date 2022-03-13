@@ -1,0 +1,39 @@
+@import "../../../styles/variables";
+@import "../../../styles/animations";
+
+.visualizer {
+  display: flex;
+  width: 100%;
+  padding: 0 0 0 $sp-xl;
+  @include expand-animation();
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    height: 100%;
+
+    &__container {
+      height: $dim-md;
+      display: flex;
+      align-items: flex-end;
+      border-bottom: 1px solid $color-light;
+      min-height: $dim-sm;
+    }
+
+    &__graph {
+      flex: 1;
+      overflow: hidden;
+    }
+  }
+
+  @media screen and (max-width: $tablet) {
+    padding: 0;
+    flex-direction: column;
+    height: 100%;
+
+    & > div {
+      height: 50%;
+    }
+  }
+}
