@@ -14,12 +14,4 @@
   &__bottom {
     height: $sp-sm;
   }
-
-  @media screen and (max-width: $tablet) {
-    transform: rotate(180deg);
-
-    & > div {
-      transform: rotate(-180deg);
-    }
-  }
 }
